@@ -364,7 +364,7 @@
         <div class="col-lg-5 d-none d-lg-flex bg-white justify-content-center align-items-center login-left-panel">
             <div class="text-center p-5" style="position: relative; z-index: 1;">
                 <!-- Event badge -->
-                <div class="event-badge">Sự kiện đặc biệt</div>
+                <div class="event-badge">Hệ thống an ninh</div>
                 
                 <div class="mb-5">
                     <!-- University logo with floating animation -->
@@ -377,7 +377,8 @@
                 </div>
                 
                 <div class="alert alert-primary p-3 mb-5" style="border-radius: 15px; background: rgba(13, 110, 253, 0.1); border: none;">
-                    <p class="lead mb-0 fw-bold text-primary">Hệ thống thông tin dành cho sinh viên, giảng viên và cán bộ</p>
+                    <p class="lead mb-0 fw-bold text-primary">Hệ thống giám sát bằng camera</p>
+                    <small class="text-primary">Truy cập, quản lý và giám sát an ninh</small>
                 </div>
                 
                 <!-- Enhanced social icons -->
@@ -411,7 +412,7 @@
                     <div class="col-12 col-md-8 col-lg-7 col-xl-6">
                         <!-- University logo for mobile view -->
                         <div class="text-center d-lg-none mb-5">
-                            <div class="event-badge">Tuyển sinh 2023</div>
+                            <div class="event-badge">Hệ thống an ninh</div>
                             <img src="<?= base_url('assets/images/logo-hub.png') ?>" alt="Logo Đại học Ngân hàng" class="img-fluid mb-3 floating" style="max-width: 200px;">
                             <h2 class="university-title">TRƯỜNG ĐẠI HỌC NGÂN HÀNG</h2>
                             <p class="text-primary fw-bold">TP. Hồ Chí Minh</p>
@@ -441,7 +442,10 @@
                             <div class="card-decoration"></div>
                             
                             <div class="card-header py-4 text-center">
-                                <h3 class="card-title fw-bold mb-0 text-white"><?= lang('Auth.login') ?></h3>
+                                <h3 class="card-title fw-bold mb-0 text-white">
+                                    <i class="bi bi-camera-video me-2"></i><?= lang('Auth.login') ?>
+                                </h3>
+                                <small class="text-white opacity-75">Hệ thống giám sát camera</small>
                             </div>
                             <div class="card-body p-4 p-md-5">
                                 <?php if (session('error') !== null) : ?>
@@ -480,7 +484,7 @@
                                     <div class="form-floating mb-4">
                                         <input type="email" class="form-control form-control-lg border-0 shadow-sm" id="floatingEmailInput" name="email" inputmode="email" autocomplete="email" placeholder="<?= lang('Auth.email') ?>" value="<?= old('email') ?>" required>
                                         <label for="floatingEmailInput"><i class="bi bi-envelope-fill me-1"></i> <?= lang('Auth.email') ?></label>
-                                        <div class="form-text">Nhập email trường cấp (@st.buh.edu.vn hoặc @buh.edu.vn)</div>
+                                        <div class="form-text">Nhập email để truy cập hệ thống giám sát</div>
                                     </div>
 
                                     <!-- Password -->
@@ -501,7 +505,7 @@
 
                                     <div class="d-grid mb-4">
                                         <button type="submit" class="btn btn-primary btn-lg py-3 fw-bold shine">
-                                            <i class="bi bi-box-arrow-in-right me-2"></i><?= lang('Auth.login') ?>
+                                            <i class="bi bi-shield-lock-fill me-2"></i>Truy cập hệ thống
                                         </button>
                                     </div>
 
@@ -523,7 +527,7 @@
                                     <div class="position-relative text-center mb-4">
                                         <hr class="text-muted">
                                         <span class="position-absolute top-50 start-50 translate-middle px-4 bg-white text-muted small fw-bold">
-                                            Hoặc đăng nhập bằng
+                                            Hoặc đăng nhập qua
                                         </span>
                                     </div>
 
@@ -538,13 +542,13 @@
                                 </form>
                             </div>
                             <div class="card-footer bg-light py-4 text-center">
-                                <p class="mb-0">Gặp khó khăn khi đăng nhập? <a href="mailto:support@buh.edu.vn" class="text-decoration-none fw-bold">Liên hệ hỗ trợ</a></p>
+                                <p class="mb-0">Gặp sự cố khi truy cập? <a href="mailto:security@buh.edu.vn" class="text-decoration-none fw-bold">Liên hệ bộ phận an ninh</a></p>
                             </div>
                         </div>
                         
                         <!-- Footer for mobile view -->
                         <div class="text-center text-muted small mt-4 d-lg-none">
-                            <p>© <?= date('Y') ?> Trường Đại học Ngân hàng TP.HCM</p>
+                            <p>© <?= date('Y') ?> Hệ thống giám sát camera - Trường Đại học Ngân hàng TP.HCM</p>
                             <p>Địa chỉ: 36 Tôn Thất Đạm, Phường Nguyễn Thái Bình, Quận 1, TP.HCM</p>
                             <p>Hotline: (028) 38 212 430</p>
                         </div>
