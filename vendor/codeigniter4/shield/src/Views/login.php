@@ -509,16 +509,11 @@
                                         </button>
                                     </div>
 
-                                    <div class="d-flex justify-content-between small mb-4">
+                                    <!-- Remove Registration Option and Adjust Layout -->
+                                    <div class="mb-4 text-center">
                                         <?php if (setting('Auth.allowMagicLinkLogins')) : ?>
                                             <a href="<?= url_to('magic-link') ?>" class="text-decoration-none">
                                                 <i class="bi bi-link-45deg me-1"></i><?= lang('Auth.useMagicLink') ?>
-                                            </a>
-                                        <?php endif ?>
-
-                                        <?php if (setting('Auth.allowRegistration')) : ?>
-                                            <a href="<?= url_to('register') ?>" class="text-decoration-none">
-                                                <i class="bi bi-person-plus-fill me-1"></i><?= lang('Auth.register') ?>
                                             </a>
                                         <?php endif ?>
                                     </div>
