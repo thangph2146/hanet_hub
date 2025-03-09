@@ -1,0 +1,223 @@
+/* Custom CSS for Banking University Authentication Pages */
+
+:root {
+    --buh-primary: #00529b; /* Màu xanh dương đậm của logo BUH */
+    --buh-secondary: #f7b928; /* Màu vàng của logo BUH */
+    --buh-dark: #003366; /* Màu xanh đậm hơn cho hover */
+    --buh-light: #e9f0f8; /* Màu nền nhẹ */
+    --buh-accent: #e74c3c; /* Màu nhấn */
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    background-color: var(--buh-light);
+}
+
+/* Primary color customization */
+.bg-primary {
+    background-color: var(--buh-primary) !important;
+    background-image: linear-gradient(135deg, var(--buh-primary) 0%, var(--buh-dark) 100%);
+}
+
+.text-primary {
+    color: var(--buh-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--buh-primary);
+    border-color: var(--buh-primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--buh-dark);
+    border-color: var(--buh-dark);
+}
+
+/* Form styling */
+.form-control:focus {
+    border-color: var(--buh-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 82, 155, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--buh-primary);
+    border-color: var(--buh-primary);
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    border-radius: 0;
+}
+
+.card-header {
+    border-bottom: none;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.card-footer {
+    border-top: none;
+    border-radius: 0 0 15px 15px !important;
+}
+
+/* Social media icons */
+.rounded-circle {
+    transition: all 0.3s ease;
+}
+
+.rounded-circle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for the login button */
+.btn-lg {
+    transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 992px) {
+    .card {
+        border-radius: 10px;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .card-header {
+        border-radius: 10px 10px 0 0 !important;
+    }
+    
+    .card-footer {
+        border-radius: 0 0 10px 10px !important;
+    }
+}
+
+/* Google button styling */
+.btn-outline-dark {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+/* Custom animation for alerts */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accent color for highlights */
+.accent-color {
+    color: var(--buh-secondary);
+}
+
+.bg-accent {
+    background-color: var(--buh-secondary);
+}
+
+/* Custom styling for the login page */
+.login-container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-left-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.login-left-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.png');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* Form elements styling */
+.form-floating label {
+    color: #6c757d;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    color: var(--buh-primary);
+    opacity: 0.8;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:hover {
+    border-color: #adb5bd;
+}
+
+/* Footer styling */
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--buh-secondary);
+    text-decoration: none;
+}
+
+/* Links styling */
+a {
+    color: var(--buh-primary);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--buh-dark);
+}
+
+/* Custom button styles */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--buh-primary), var(--buh-dark));
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, var(--buh-dark), var(--buh-primary));
+}
+
+/* Logo animation */
+.img-fluid {
+    transition: all 0.5s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+} 
